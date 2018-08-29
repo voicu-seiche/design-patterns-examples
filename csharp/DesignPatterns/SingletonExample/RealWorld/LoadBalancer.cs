@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SingletonExample
+namespace SingletonExample.RealWorld
 {
     public class LoadBalancer
     {

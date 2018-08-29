@@ -1,4 +1,6 @@
 ﻿using System;
+using SingletonExample.RealWorld;
+using SingletonExample.Structural;
 
 namespace SingletonExample
 {
@@ -6,6 +8,16 @@ namespace SingletonExample
     {
         static void Main(string[] args)
         {
+            // Structural example
+            //Singleton s1 = Singleton.Instance();
+            //Singleton s2 = Singleton.Instance();
+
+            //if (s1 == s2)
+            //{
+            //    Console.WriteLine("Objects are the same instance");
+            //}
+
+            // Real-world example
             LoadBalancer b1 = LoadBalancer.GetLoadBalancer();
             LoadBalancer b2 = LoadBalancer.GetLoadBalancer();
             LoadBalancer b3 = LoadBalancer.GetLoadBalancer();
