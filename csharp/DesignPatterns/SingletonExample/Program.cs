@@ -8,16 +8,16 @@ namespace SingletonExample
     {
         static void Main(string[] args)
         {
-            // Structural example
-            //Singleton s1 = Singleton.Instance();
-            //Singleton s2 = Singleton.Instance();
+            Console.WriteLine("Structural example:");
+            Singleton s1 = Singleton.Instance();
+            Singleton s2 = Singleton.Instance();
 
-            //if (s1 == s2)
-            //{
-            //    Console.WriteLine("Objects are the same instance");
-            //}
+            if (s1 == s2)
+            {
+                Console.WriteLine("Objects are the same instance");
+            }
 
-            // Real-world example
+            Console.WriteLine("Real-world example:");
             LoadBalancer b1 = LoadBalancer.GetLoadBalancer();
             LoadBalancer b2 = LoadBalancer.GetLoadBalancer();
             LoadBalancer b3 = LoadBalancer.GetLoadBalancer();
