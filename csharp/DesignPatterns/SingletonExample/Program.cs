@@ -17,6 +17,8 @@ namespace SingletonExample
                 Console.WriteLine("Objects are the same instance");
             }
 
+            Console.WriteLine();
+
             Console.WriteLine("Real-world example:");
             LoadBalancer b1 = LoadBalancer.GetLoadBalancer();
             LoadBalancer b2 = LoadBalancer.GetLoadBalancer();

@@ -17,6 +17,8 @@ namespace AbstractFactoryExample
             Client client2 = new Client(factory2);
             client2.Run();
 
+            Console.WriteLine();
+
             Console.WriteLine("Real-world example:");
             ContinentFactory africa = new AfricaFactory();
             AnimalWorld world = new AnimalWorld(africa);
